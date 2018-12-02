@@ -4,7 +4,7 @@ ENV build_dep='g++ gfortran python3-dev curl'
 ENV build_dev='libopenblas-dev'
 
 RUN apt-get -y update && apt-get install -y --no-install-recommends \
-         python3 ca-certificates \
+         python3 python3-distutils ca-certificates \
          $build_dep \
          $build_dev \
     && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py \
