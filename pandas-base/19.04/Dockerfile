@@ -1,4 +1,4 @@
-FROM ubuntu:19.04
+FROM ubuntu:20.04
 
 ENV build_dep='g++ gfortran python3-dev curl'
 ENV build_dev='libopenblas-dev'
