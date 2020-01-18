@@ -12,7 +12,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
     pip install --no-cache-dir --compile --global-option=build_ext \
     numpy pandas \
     && apt-get purge -y --auto-remove $build_dep \
-    && apt-get purge -y $build_dev \
+    && apt-get purge -y --auto-remove $build_dev \
     && find /usr/local/lib/python3.*/ -name 'tests' -exec rm -r {} + \
     && rm -rf /var/lib/apt/lists/*
 
