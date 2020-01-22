@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ENV build_dep='g++ gfortran python3-dev curl cython'
+ENV build_dep='g++ gfortran python3-dev curl cython3'
 ENV build_dev='libopenblas-dev'
 
 RUN apt-get -y update && apt-get install -y --no-install-recommends \
