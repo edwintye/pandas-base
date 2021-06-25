@@ -1,0 +1,12 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/pandas-base"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/pandas-base/20.04"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
