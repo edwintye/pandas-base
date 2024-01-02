@@ -1,4 +1,4 @@
-FROM ubuntu:23.10
+FROM ubuntu:24.04
 
 ENV build_dep='g++ gfortran python3-dev curl cython3'
 ENV build_dev='libopenblas-dev'
