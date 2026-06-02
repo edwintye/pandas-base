@@ -2,7 +2,7 @@ version: 2
 updates:
 - package-ecosystem: docker
   directories:
-    - "/pandas-base/Dockerfile"
+    - "/pandas-base"
   schedule:
     interval: monthly
   open-pull-requests-limit: 10
